@@ -1,0 +1,25 @@
+{
+  "name": "auction-house",
+  "version": "0.0.1",
+  "description": "building an auction house for project semester 2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Karl Petter Nordgaard <karnor50544@stud.noroff.no>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlpnord/semester-project-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karlpnord/semester-project-2/issues"
+  },
+  "homepage": "https://github.com/karlpnord/semester-project-2#readme",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "prettier": "^3.2.5"
+  }
+}
