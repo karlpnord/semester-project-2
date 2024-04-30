@@ -2,12 +2,17 @@ $primary: #3559E0;
 $secondary: #068FFF;
 $light: #EEEEEE;
 $dark: #2C2C2C;
+$border-clr: rgba(80, 80, 80, 0.85);
 
 $display-font-family: 'Poppins', sans-serif;
 $display-font-weight: 900;
 $display-line-height: 1;
 
-$box-shadow-primary: 0px 4px 4px 0px $primary;
+$regular-font-family: 'Inter', sans-serif;
+$button-font-family: 'Montserrat', sans-serif;
+
+$box-shadow-navbar: 0px 4px 4px 0px $primary;
+$box-shadow-primary: 0px 2px 2px 0px $primary;
 $box-shadow-dark: 0px 2px 2px 0px $dark;
 
 $spacer: 1rem;
@@ -22,3 +27,10 @@ $spacers: (
   7: $spacer * 5,
   8: $spacer * 10,
 );
+
+$input-font-family: 'Poppins', sans-serif;
+$input-bg: $light;
+$input-color: $dark;
+$input-border-color: $border-clr;
+$input-focus-box-shadow: none;
+$input-focus-border-color: $primary;

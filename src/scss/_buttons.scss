@@ -1,0 +1,15 @@
+.btn {
+  font-family: $button-font-family;
+  width: fit-content;
+  font-weight: $font-weight-semibold;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: $box-shadow-dark;
+  transition: ease 300ms;
+}
+
+.btn-outline-primary:hover {
+  color: $primary;
+}
