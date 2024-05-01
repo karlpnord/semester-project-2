@@ -7,19 +7,25 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities";
-
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@import "buttons";
+@import "inputs";
+
 header {
-  box-shadow: $box-shadow-primary;
+  box-shadow: $box-shadow-navbar;
+}
+
+.logo {
+  font-family: $display-font-family;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: $display-font-family;
   font-weight: 800;
   color: $primary;
   letter-spacing: -2px;
@@ -31,13 +37,8 @@ p {
   color: $dark;
 }
 
-footer p {
-  color: $light;
-  font-weight: $font-weight-semibold;
-}
-
 main {
-  margin: 100px auto;
+  margin: 100px auto 150px;
   max-width: 1000px;
 }
 
@@ -48,27 +49,16 @@ main {
   padding-left: 5px;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 footer {
   background: rgb(53,89,224);
   background: linear-gradient(15deg, rgba(53,89,224,1) 44%, rgba(6,143,255,1) 83%);
 }
 
-.btn {
-  font-family: 'Montserrat', sans-serif;
-  width: fit-content;
+footer p {
+  color: $light;
   font-weight: $font-weight-semibold;
-}
-
-.btn:hover {
-  transform: scale(1.02);
-  box-shadow: $box-shadow-dark;
-  transition: ease 300ms;
-}
-
-.btn-outline-primary:hover {
-  color: $primary;
-}
-
-.link:hover {
-  text-decoration: underline;
 }

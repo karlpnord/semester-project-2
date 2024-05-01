@@ -1,0 +1,20 @@
+input:focus {
+  border-width: 3px;
+}
+
+.form-check-label {
+  font-size: 0.75em;
+  font-family: $regular-font-family;
+}
+
+input {
+  box-shadow: $box-shadow-primary;
+}
+
+.form-floating label {
+  font-family: $display-font-family;
+}
+
+.form-check-input {
+  border: 1px solid $border-clr;
+}
