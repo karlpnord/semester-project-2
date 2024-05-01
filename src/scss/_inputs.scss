@@ -1,5 +1,5 @@
 input:focus {
-  border-width: 3px;
+  border-width: 1px;
 }
 
 .form-check-label {
@@ -17,4 +17,12 @@ input {
 
 .form-check-input {
   border: 1px solid $border-clr;
+}
+
+.form-search {
+  box-shadow: none;
+}
+
+.search-group {
+  max-width: 600px;
 }
