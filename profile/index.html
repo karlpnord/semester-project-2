@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TBD">
+  <title>CTO - Profile</title>
+  <link rel="stylesheet" href="/dist/css/styles.css">
+  <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
+  <script src="../main.js" type="module" defer></script>
+</head>
+<body class="bg-light">
+
+  <header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 justify-content-md-between">
+      <div class="container">
+        <a class="navbar-brand text-light font-family-poppins fw-bold fs-3 logo" href="/index.html">
+          CTO Auction
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
+          <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link" aria-current="page" href="#">Listings</a>
+            </li>
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link" href="#">Create</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0">
+              <button class="btn btn-primary rounded-pill px-md-4">Logout</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="mt-7 text-center profile-container rounded">
+        <div class="profile-banner"></div>
+        <img src="../images/avatar.jpeg" alt="..." class="rounded-circle profile-avatar">
+        <h1 class="display-3">Username</h1>
+        <p>email@email.com</p>
+        <h2>Credits: 1000€</h2>
+        <form>
+          <div class="form-floating">
+            <input type="url" class="form-control" id="inputAvatar" placeholder="Avatar URL" required>
+            <label for="inputAvatar">Avatar</label>
+          </div>
+          <button class="btn btn-primary rounded-pill btn-lg px-md-4" type="submit">Update Avatar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-light bg-dark">
+    <div class="container">
+      <div class="text-center footer-copyright py-4">
+        &#169;Copyright: CTO Auction
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
