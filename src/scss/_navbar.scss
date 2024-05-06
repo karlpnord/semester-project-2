@@ -1,0 +1,9 @@
+.nav-link {
+  font-family: $regular-font-family;
+  color: $light;
+}
+
+header {
+  box-shadow: $box-shadow-navbar;
+  z-index: 1000;
+}

@@ -11,5 +11,7 @@
 }
 
 .btn-outline-primary:hover {
+  background: $light-gray;
   color: $primary;
+  box-shadow: none;
 }

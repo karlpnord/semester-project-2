@@ -28,48 +28,56 @@
   </header>
 
   <main>
-    <div class="container px-3">
-      <div class="text-center">
-        <h1 class="display-1 mb-2">Create Profile</h1>
-        <p class="px-md-8">Register now and start bidding on our listings!</p>
+    <section>
+      <div class="container">
+        <div class="text-center mt-7">
+          <h1 class="display-1 mb-2">Create Profile</h1>
+          <p class="px-md-8">Register now and start bidding on our listings!</p>
+        </div>
       </div>
-      <form class="container mt-5 col-sm-9 col-md-7 col-lg-6">
-        <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="nameInput" placeholder="Name" required minlength="3">
-          <label for="nameInput">Name</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="emailInput" placeholder="Email Address" required pattern="^[\w\-.]+@(stud.)?noroff.no$">
-          <label for="emailInput">Email address</label>
-        </div>
-        <div class="form-floating mb-5">
-          <input type="password" class="form-control" id="passwordInput" placeholder="Password" required minlength="8">
-          <label for="passwordInput">Password</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="url" class="form-control" id="avatarInput" placeholder="Avatar URL">
-          <label for="avatarInput">Avatar URL</label>
-        </div>
-        <div class="form-floating mb-4">
-          <input type="url" class="form-control" id="bannerInput" placeholder="Banner URL">
-          <label for="bannerInput">Banner URL</label>
-        </div>
-        <div class="form-check mb-5">
-          <input class="form-check-input" type="checkbox" value="" id="registerCheck">
-          <label class="form-check-label ms-1" for="registerCheck">
-            I agree to CTO's Terms of Service, Privacy Policy and Data Processing Agreement.
-          </label>
-        </div>
-        <div class="d-flex justify-content-center">
-          <button class="btn btn-primary rounded-pill btn-lg px-md-4" type="submit" disabled>Register Now</button>
-        </div>
-      </form>
-    </div>
+    </section>
+    <section>
+      <div class="container">
+        <form class="mt-5 mb-7 mx-auto px-3 px-md-0 col-sm-9 col-md-7 col-lg-6 col-xl-5">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nameInput" placeholder="Name" required minlength="3">
+            <label for="nameInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="emailInput" placeholder="Email Address" required pattern="^[\w\-.]+@(stud.)?noroff.no$">
+            <label for="emailInput">Email address</label>
+          </div>
+          <div class="form-floating mb-5">
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password" required minlength="8">
+            <label for="passwordInput">Password</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="url" class="form-control" id="avatarInput" placeholder="Avatar URL">
+            <label for="avatarInput">Avatar URL</label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="url" class="form-control" id="bannerInput" placeholder="Banner URL">
+            <label for="bannerInput">Banner URL</label>
+          </div>
+          <div class="form-check mb-5">
+            <input class="form-check-input" type="checkbox" value="" id="registerCheck">
+            <label class="form-check-label ms-1" for="registerCheck">
+              I agree to CTO's Terms of Service, Privacy Policy and Data Processing Agreement.
+            </label>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary rounded-pill btn-lg px-md-4" type="submit" disabled>Register Now</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer class="fixed-bottom py-3">
+  <footer class="text-center text-light bg-dark">
     <div class="container">
-      <p class="fs-5 mb-0">&#169; CTO</p>
+      <div class="text-center footer-copyright py-4">
+        &#169;Copyright: CTO Auction
+      </div>
     </div>
   </footer>
 

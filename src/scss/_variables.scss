@@ -1,6 +1,7 @@
 $primary: #3559E0;
 $secondary: #068FFF;
 $light: #EEEEEE;
+$light-gray: #E4E4E4;
 $dark: #2C2C2C;
 $border-clr: rgba(80, 80, 80, 0.85);
 
@@ -34,3 +35,6 @@ $input-color: $dark;
 $input-border-color: $border-clr;
 $input-focus-box-shadow: none;
 $input-focus-border-color: $primary;
+
+$card-bg: $light;
+$card-border-color: $light;
