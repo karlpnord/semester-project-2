@@ -7,11 +7,16 @@
 .btn:hover {
   transform: scale(1.02);
   box-shadow: $box-shadow-dark;
-  transition: ease 300ms;
+  transition: all ease 300ms;
 }
 
 .btn-outline-primary:hover {
   background: $light-gray;
   color: $primary;
   box-shadow: none;
+}
+
+.btn-blank:hover {
+  box-shadow: none;
+  border: 1px solid $dark;
 }
