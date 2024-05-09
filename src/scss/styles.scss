@@ -22,11 +22,16 @@
   font-family: $display-font-family;
 }
 
-h1 {
+h1,
+.display-3 {
   font-family: $display-font-family;
   font-weight: 800;
   color: $primary;
   letter-spacing: -2px;
+}
+
+.display-3 {
+  color: $dark;
 }
 
 p {
