@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="TBD">
-  <title>CTO - Listings</title>
+  <title>CTO - Profile</title>
   <link rel="stylesheet" href="/dist/css/styles.css">
   <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
   <script src="../main.js" type="module" defer></script>
@@ -23,10 +23,10 @@
         <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
           <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="index.html">Listings</a>
+              <a class="nav-link" href="../feed/index.html">Listings</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../profile/index.html">Profile</a>
+              <a class="nav-link" href="index.html">Profile</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
               <a class="nav-link" href="../create-listing/index.html">Create</a>
@@ -41,74 +41,82 @@
   </header>
 
   <main>
-    <section class="py-6 mb-5">
-      <div class="container text-center">
-        <h1 class="display-1 mb-2">Current Listings</h1>
-        <div class="input-group search-group mt-4 mx-auto container">
-          <input type="text" class="form-control form-search" placeholder="Search..." aria-label="Search" aria-describedby="searchButton">
-          <button class="btn btn-outline-dark" type="button" id="searchButton">Search</button>
+    <section class="container">
+      <div class="mt-7 pb-6 text-center profile-container rounded border border-dark-subtle shadow">
+        <div class="profile-banner"></div>
+        <img src="../images/avatar.jpeg" alt="..." class="rounded-circle profile-avatar">
+        <h1 class="display-3">Username</h1>
+        <p>email@email.com</p>
+        <h2>Credits: 1000€</h2>
+        <form class="container mt-6 d-flex flex-column gap-3 align-items-center">
+          <div class="form-floating update-avatar-container w-100">
+            <input type="url" class="form-control" id="inputUpdateAvatar" placeholder="Avatar URL" required>
+            <label for="inputUpdateAvatar">Avatar URL</label>
+          </div>
+          <button class="btn btn-primary rounded-pill btn-lg px-md-4 w-100" type="submit" id="updateAvatarBtn">Update Avatar</button>
+        </form>
+      </div>
+    </section>
+    <section class="container">
+      <div class="mt-8">
+      <h2 class="display-3 text-center mb-7">Your Listings</h2>
+        <div class="row gy-5 gx-5 mx-auto pb-6 mb-5">
+          <div class="col-lg-4">
+            <div class="card shadow">
+              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
+              <div class="card-body">
+                <h2 class="card-title fs-3">Listing Title</h2>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h3 class="card-bid">100€</h3>
+                <div class="d-flex justify-content-between gap-4 mt-4">
+                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Favorite</span>
+                  </button>
+                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow">
+              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
+              <div class="card-body">
+                <h2 class="card-title fs-3">Listing Title</h2>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h3 class="card-bid">100€</h3>
+                <div class="d-flex justify-content-between gap-4 mt-4">
+                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Favorite</span>
+                  </button>
+                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card shadow">
+              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
+              <div class="card-body">
+                <h2 class="card-title fs-3">Listing Title</h2>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h3 class="card-bid">100€</h3>
+                <div class="d-flex justify-content-between gap-4 mt-4">
+                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Favorite</span>
+                  </button>
+                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    
-    <section class="bg-lightgray">
-      <div class="container">
-        <div class="row gy-5 gx-5 mx-auto pb-6">
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </section>
   </main>
+
   <footer class="text-center text-light bg-dark">
     <div class="container">
       <div class="text-center footer-copyright py-4">
@@ -116,5 +124,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>

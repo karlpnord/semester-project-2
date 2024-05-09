@@ -22,11 +22,16 @@
   font-family: $display-font-family;
 }
 
-h1 {
+h1,
+.display-3 {
   font-family: $display-font-family;
   font-weight: 800;
   color: $primary;
   letter-spacing: -2px;
+}
+
+.display-3 {
+  color: $dark;
 }
 
 p {
@@ -65,4 +70,23 @@ main {
 
 .view-bids-container {
   max-width: 600px;
+}
+
+.profile-avatar {
+  width: 100%;
+  max-width: 100px;
+}
+
+.profile-banner {
+  height: 125px;
+  background: rgb(53,89,224);
+  background: linear-gradient(90deg, rgba(53,89,224,1) 30%, rgba(6,143,255,1) 90%);
+}
+
+.profile-avatar {
+  margin-top: -50px;
+}
+
+.profile-container {
+  overflow: hidden;
 }
