@@ -8,6 +8,7 @@ export function registerListener() {
   checkboxChecked();
 
   form.addEventListener('submit', (event) => {
+    document.querySelector('.error-container').textContent = '';
     event.preventDefault();
 
     const inputData = {

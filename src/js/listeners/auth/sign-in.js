@@ -6,14 +6,13 @@ export function signInListener() {
   const form = document.querySelector('#registerForm');
 
   form.addEventListener('submit', (event) => {
+    document.querySelector('.error-container').textContent = '';
     event.preventDefault();
 
     const inputData = {
       email: document.querySelector('#emailInput').value,
       password: document.querySelector('#passwordInput').value,
     };
-    console.log(inputData);
-    console.log(url);
     signIn(url, inputData);
   });
 }

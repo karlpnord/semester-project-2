@@ -13,6 +13,7 @@ export async function signIn(url, data) {
     const { accessToken, ...profile } = json.data;
     localStorage.setItem('token', JSON.stringify(accessToken));
     localStorage.setItem('profile', JSON.stringify(profile));
+    window.location.href = '/feed/index.html';
     return json;
   }
   document.querySelector('.error-container').textContent =
