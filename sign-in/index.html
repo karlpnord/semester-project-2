@@ -6,6 +6,7 @@
   <meta name="description" content="Sign in to CTO today and start bidding on our actions! You can also add your own items to auction!">
   <title>CTO - Sign In</title>
   <link rel="stylesheet" href="/dist/css/styles.css">
+  <script src="../src/js/sign-in-index.js" type="module"></script>
   <script src="../main.js" type="module" defer></script>
 </head>
 <body class="bg-light">
@@ -38,7 +39,7 @@
     </section>
     <section>
       <div class="container">
-        <form class="container mt-5 mb-7 px-3 px-md-0 col-sm-9 col-md-7 col-lg-6 col-xl-5">
+        <form id="registerForm" class="container mt-5 mb-7 px-3 px-md-0 col-sm-9 col-md-7 col-lg-6 col-xl-5">
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="emailInput" placeholder="Email Address" required pattern="^[\w\-.]+@(stud.)?noroff.no$">
             <label for="emailInput">Email address</label>
@@ -47,11 +48,12 @@
             <input type="password" class="form-control" id="passwordInput" placeholder="Password" required minlength="8">
             <label for="passwordInput">Password</label>
           </div>
+          <div class="error-container mb-3 text-danger fw-bold"></div>
           <div class="form-check mb-5 d-flex justify-content-between">
             <div>
-              <input class="form-check-input" type="checkbox" value="" id="rememberMeCheck">
-              <label class="form-check-label" for="rememberMeCheck">
-                Remember me
+              <input class="form-check-input" type="checkbox" value="" id="checkboxValidate">
+              <label class="form-check-label ms-1" for="checkboxValidate">
+                Remember Me
               </label>
             </div>
             <a href="#" class="link">Forgot password?</a>
