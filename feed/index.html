@@ -54,61 +54,27 @@
     
     <section class="bg-lightgray">
       <div class="container">
-        <div class="row gy-5 gx-5 mx-auto pb-6">
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="row gy-5 gx-5 mx-auto pb-6" id="listingsContainer"></div>
       </div>  
     </section>
+
+    <section>
+      <nav aria-label="Page navigation" class="container my-6">
+        <ul class="pagination justify-content-center gap-2">
+          <li class="page-item">
+            <button class="btn btn-outline-primary" id="prevBtn">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </li>
+          <li class="page-item">
+            <button class="btn btn-outline-primary" id="nextBtn">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
   </main>
   <footer class="text-center text-light bg-dark">
     <div class="container">
