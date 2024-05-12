@@ -8,7 +8,7 @@ export function showListings(listings) {
     container.appendChild(colDiv);
 
     const card = document.createElement('div');
-    card.classList.add('card', 'shadow');
+    card.classList.add('card', 'shadow', 'h-100');
     colDiv.appendChild(card);
 
     const cardImg = document.createElement('img');
@@ -19,7 +19,7 @@ export function showListings(listings) {
       cardImg.src = listing.media[0].url;
     }
     const cardBody = document.createElement('div');
-    cardBody.classList.add('card-body');
+    cardBody.classList.add('card-body', 'd-flex', 'flex-column');
     card.append(cardImg, cardBody);
 
     const title = document.createElement('h2');
@@ -29,7 +29,7 @@ export function showListings(listings) {
     text.classList.add('card-text');
     text.textContent = listing.description;
     const endsAt = document.createElement('h3');
-    endsAt.classList.add('card-bid', 'fs-4');
+    endsAt.classList.add('card-bid', 'fs-4', 'flex-grow-1');
     endsAt.textContent = listing.endsAt.substring(0, 10);
     const btnDiv = document.createElement('div');
     btnDiv.classList.add('d-flex', 'justify-content-between', 'gap-4', 'mt-4');

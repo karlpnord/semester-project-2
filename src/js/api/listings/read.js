@@ -1,5 +1,6 @@
 import { API_BASE_URL } from '../../api/constants.js';
 import { showListings } from '../../views/listingsPage.js';
+import { checkButtons } from './pageButtons.js';
 
 export async function getListings(limit = 30, page = 1) {
   const response = await fetch(
@@ -15,9 +16,11 @@ export async function getListings(limit = 30, page = 1) {
   const json = await response.json();
 
   if (response.ok) {
-    console.log(json.data);
-    console.log(json.meta);
     showListings(json.data);
+    checkButtons(json.meta);
+    localStorage.setItem('pageInfo', JSON.stringify(json.meta));
+    document.querySelector('#currentPage').textContent =
+      `Page ${json.meta.currentPage} of ${json.meta.pageCount}`;
     return json;
   }
 }
