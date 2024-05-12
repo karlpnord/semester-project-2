@@ -1,6 +1,6 @@
 import { API_BASE_URL } from '../../api/constants.js';
 import { showListings } from '../../views/listingsPage.js';
-import { checkButtons } from './pageButtons.js';
+import { checkButtons } from '../../listeners/utilities/pageButtons.js';
 
 export async function getListings(limit = 30, page = 1) {
   const response = await fetch(
@@ -23,4 +23,6 @@ export async function getListings(limit = 30, page = 1) {
       `Page ${json.meta.currentPage} of ${json.meta.pageCount}`;
     return json;
   }
+  document.querySelector('.error-container').textContent =
+    json.errors[0].message;
 }

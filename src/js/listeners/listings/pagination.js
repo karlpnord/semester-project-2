@@ -1,4 +1,4 @@
-import { getListings } from './read.js';
+import { getListings } from '../../api/listings/read.js';
 
 export function locatePage() {
   const data = JSON.parse(localStorage.getItem('pageInfo'));

@@ -1,6 +1,6 @@
 import { logout } from './api/auth/logout.js';
 import { getListings } from './api/listings/read.js';
-import { locatePage } from './api/listings/pagination.js';
+import { locatePage } from './listeners/listings/pagination.js';
 
 document.querySelector('#logOutBtn').onclick = function () {
   logout();
