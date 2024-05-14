@@ -85,6 +85,9 @@ main {
 
 .profile-avatar {
   margin-top: -50px;
+  width: 100%;
+  object-fit: cover;
+  height: 100px;
 }
 
 .profile-container {
