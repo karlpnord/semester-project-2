@@ -58,9 +58,10 @@ export function showListings(listings) {
     favText.textContent = 'Favorite';
     favBtn.append(favIcon, favText);
 
-    const bidBtn = document.createElement('button');
+    const bidBtn = document.createElement('a');
     bidBtn.classList.add('btn', 'btn-primary', 'rounded-pill', 'w-50', 'px-0');
     bidBtn.textContent = 'Bid Now';
+    bidBtn.href = `../single-listing/?id=${listing.id}`;
 
     btnDiv.append(favBtn, bidBtn);
   });
