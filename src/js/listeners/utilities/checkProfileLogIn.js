@@ -1,4 +1,4 @@
-export function checkIfLoggedIn() {
+export function checkIfLoggedIn(page) {
   const profile = localStorage.getItem('profile');
   const content = document.querySelectorAll('section');
 
@@ -17,7 +17,15 @@ export function checkIfLoggedIn() {
       'fs-2',
       'mt-6',
     );
-    newDiv.textContent = 'You have to be logged in to view your profile!';
+
+    if (page === 'profile') {
+      newDiv.textContent = 'You have to be logged in to view your profile!';
+    }
+
+    if (page === 'create') {
+      newDiv.textContent = 'You have to be logged in to add a listing!';
+    }
+
     main.append(newDiv);
     return false;
   } else {
