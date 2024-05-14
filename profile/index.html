@@ -33,7 +33,7 @@
               <a class="nav-link" href="../create-listing/index.html">Create</a>
             </li>
             <li class="nav-item mt-3 mt-md-0">
-              <button class="btn btn-primary rounded-pill px-md-4">Logout</button>
+              <button class="btn btn-primary rounded-pill px-md-4" id="logOutBtn">Logout</button>
             </li>
           </ul>
         </div>
@@ -43,10 +43,11 @@
 
   <main>
     <section class="container">
-      <div class="mt-7 pb-6 text-center profile-container rounded border border-dark-subtle shadow">
+      <div class="loader mt-8"></div>
+      <div class="mt-7 pb-6 text-center profile-container rounded border border-dark-subtle shadow d-none" id="profileContainer">
         <div class="profile-banner"></div>
         <img src="../images/avatar.jpeg" alt="..." class="rounded-circle profile-avatar" id="profileImage">
-        <h1 class="display-3" id="profileName">Placeholder</h1>
+        <h1 class="display-3 mt-5" id="profileName">Placeholder</h1>
         <p id="profileEmail">Placeholder</p>
         <h2 id="profileCredits">Placeholder</h2>
         <form class="container mt-6 d-flex flex-column gap-3 align-items-center">
@@ -61,59 +62,7 @@
     <section class="container">
       <div class="mt-8">
       <h2 class="display-3 text-center mb-7">Your Listings</h2>
-        <div class="row gy-5 gx-5 mx-auto pb-6 mb-5">
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card shadow">
-              <img src="../images/card-sample-image.png" class="card-img-top pb-1" alt="...">
-              <div class="card-body">
-                <h2 class="card-title fs-3">Listing Title</h2>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="card-bid">100€</h3>
-                <div class="d-flex justify-content-between gap-4 mt-4">
-                  <button class="btn btn-outline-primary rounded-pill w-50 px-0 d-flex align-items-center justify-content-center gap-1">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>Favorite</span>
-                  </button>
-                  <button class="btn btn-primary rounded-pill w-50 px-0">Bid Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="row gy-5 gx-5 mx-auto pb-6 mb-5" id="listingsContainer"></div>
       </div>
     </section>
   </main>

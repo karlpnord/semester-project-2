@@ -1,3 +1,5 @@
+import { timeUntilDeadline } from '../listeners/utilities/endsAt.js';
+
 export function showListings(listings) {
   const container = document.querySelector('#listingsContainer');
   container.innerHTML = '';
@@ -30,7 +32,10 @@ export function showListings(listings) {
     text.textContent = listing.description;
     const endsAt = document.createElement('h3');
     endsAt.classList.add('card-bid', 'fs-5', 'flex-grow-1');
-    endsAt.textContent = listing.endsAt.substring(0, 10);
+
+    const endDate = timeUntilDeadline(listing.endsAt);
+    endsAt.textContent = endDate;
+
     const btnDiv = document.createElement('div');
     btnDiv.classList.add('d-flex', 'justify-content-between', 'gap-4', 'mt-4');
     cardBody.append(title, text, endsAt, btnDiv);
