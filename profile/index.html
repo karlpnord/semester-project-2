@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/dist/css/styles.css">
   <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
   <script src="../main.js" type="module" defer></script>
+  <script src="../src/js/profile-index.js" type="module" defer></script>
 </head>
 <body class="bg-light">
 
@@ -44,10 +45,10 @@
     <section class="container">
       <div class="mt-7 pb-6 text-center profile-container rounded border border-dark-subtle shadow">
         <div class="profile-banner"></div>
-        <img src="../images/avatar.jpeg" alt="..." class="rounded-circle profile-avatar">
-        <h1 class="display-3">Username</h1>
-        <p>email@email.com</p>
-        <h2>Credits: 1000€</h2>
+        <img src="../images/avatar.jpeg" alt="..." class="rounded-circle profile-avatar" id="profileImage">
+        <h1 class="display-3" id="profileName">Placeholder</h1>
+        <p id="profileEmail">Placeholder</p>
+        <h2 id="profileCredits">Placeholder</h2>
         <form class="container mt-6 d-flex flex-column gap-3 align-items-center">
           <div class="form-floating update-avatar-container w-100">
             <input type="url" class="form-control" id="inputUpdateAvatar" placeholder="Avatar URL" required>
