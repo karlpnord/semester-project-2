@@ -50,13 +50,14 @@
         <h1 class="display-3 mt-5" id="profileName">Placeholder</h1>
         <p id="profileEmail">Placeholder</p>
         <h2 id="profileCredits">Placeholder</h2>
-        <form class="container mt-6 d-flex flex-column gap-3 align-items-center">
+        <form class="container mt-6 d-flex flex-column gap-3 align-items-center px-4" id="avatarForm">
           <div class="form-floating update-avatar-container w-100">
             <input type="url" class="form-control" id="inputUpdateAvatar" placeholder="Avatar URL" required>
             <label for="inputUpdateAvatar">Avatar URL</label>
           </div>
           <button class="btn btn-primary rounded-pill btn-lg px-md-4 w-100" type="submit" id="updateAvatarBtn">Update Avatar</button>
         </form>
+        <div class="error-container mt-5 text-danger fw-bold fs-5"></div>
       </div>
     </section>
     <section class="container">
