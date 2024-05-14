@@ -1,12 +1,12 @@
 import { getListings } from '../../api/listings/read.js';
 
-export function locatePage() {
+export function pagination() {
   const data = JSON.parse(localStorage.getItem('pageInfo'));
 
   if (event.currentTarget.dataset.value === 'next') {
-    getListings(30, data.nextPage);
+    getListings(18, data.nextPage);
   } else {
-    getListings(30, data.previousPage);
+    getListings(18, data.previousPage);
   }
 
   scroll(0, 0);

@@ -23,13 +23,13 @@ export function showListings(listings) {
     card.append(cardImg, cardBody);
 
     const title = document.createElement('h2');
-    title.classList.add('card-title', 'fs-3');
+    title.classList.add('card-title', 'fs-4');
     title.textContent = listing.title;
     const text = document.createElement('p');
     text.classList.add('card-text');
     text.textContent = listing.description;
     const endsAt = document.createElement('h3');
-    endsAt.classList.add('card-bid', 'fs-4', 'flex-grow-1');
+    endsAt.classList.add('card-bid', 'fs-5', 'flex-grow-1');
     endsAt.textContent = listing.endsAt.substring(0, 10);
     const btnDiv = document.createElement('div');
     btnDiv.classList.add('d-flex', 'justify-content-between', 'gap-4', 'mt-4');
