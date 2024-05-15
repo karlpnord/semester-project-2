@@ -108,3 +108,21 @@ main {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
+
+#listingImg {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+@media (min-width: 500px) {
+  #listingImg {
+    height: 300px;
+  }
+}
+
+@media (min-width: 750px) {
+  #listingImg {
+    height: 400px;
+  }
+}
