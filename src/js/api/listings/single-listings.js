@@ -1,4 +1,5 @@
 import { API_KEY } from '../constants.js';
+import { renderSingleListing } from '../../views/singleListing.js';
 
 export async function singleListing(url) {
   const token = JSON.parse(localStorage.getItem('token'));
@@ -10,11 +11,10 @@ export async function singleListing(url) {
     method: 'GET',
   });
 
-  console.log(response);
   const json = await response.json();
 
   if (response.ok) {
-    console.log(json);
+    renderSingleListing(json.data);
     return json;
   }
 }
