@@ -6,7 +6,14 @@ export function renderSingleListing(data) {
 
   document.querySelector('#listingTitle').textContent = data.title;
   document.querySelector('#listingDesc').textContent = data.description;
-  document.querySelector('#listingImg').src = data.media[0].url;
+
+  const image = document.querySelector('#listingImg');
+  if (!data.media[0]) {
+    image.src = '../../images/card-sample-image.png';
+  } else {
+    image.src = data.media[0].url;
+  }
+
   document.querySelector('#listingDate').textContent = timeUntilDeadline(
     data.endsAt,
   );
