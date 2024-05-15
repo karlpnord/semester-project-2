@@ -10,12 +10,12 @@
   <script src="../main.js" type="module" defer></script>
   <script src="../src/js/feed-index.js" type="module" defer></script>
 </head>
-<body class="bg-light">
+<body class="bg-white">
 
   <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 justify-content-md-between">
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3 justify-content-md-between">
       <div class="container">
-        <a class="navbar-brand text-light font-family-poppins fw-bold fs-3 logo" href="/index.html">
+        <a class="navbar-brand text-dark font-family-poppins fw-bold fs-3 logo" href="/index.html">
           CTO Auction
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,16 @@
         <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
           <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="index.html">Listings</a>
+              <a class="nav-link text-dark" href="index.html">Listings</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../profile/index.html">Profile</a>
+              <a class="nav-link text-dark" href="../profile/index.html">Profile</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../create-listing/index.html">Create</a>
+              <a class="nav-link text-dark" href="../create-listing/index.html">Create</a>
             </li>
             <li class="nav-item mt-3 mt-md-0">
-              <a class="btn btn-primary rounded-pill px-md-4" id="logOutBtn" href="../">Logout</a>
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="logOutBtn" href="../">Logout</a>
             </li>
           </ul>
         </div>
@@ -42,21 +42,21 @@
   </header>
 
   <main>
-    <section class="py-6 mb-5">
+    <section class="py-6">
       <div class="container text-center">
         <h1 class="display-1 mb-2">Current Listings</h1>
         <div class="input-group search-group mt-4 mx-auto container">
           <input type="text" class="form-control form-search" placeholder="Search..." aria-label="Search" aria-describedby="searchButton">
-          <button class="btn btn-outline-dark" type="button" id="searchButton">Search</button>
+          <button class="btn btn-outline-primary" type="button" id="searchButton">Search</button>
         </div>
       </div>
     </section>
     <section>
       <div class="error-container text-center text-danger fw-bold"></div>
     </section>
-    <section class="bg-lightgray">
+    <section class="bg-lightgray py-7">
       <div class="container">
-        <div class="row gy-5 gx-5 mx-auto pb-6" id="listingsContainer">
+        <div class="row gy-5 gx-5 mx-auto" id="listingsContainer">
           <div class="loader"></div>
         </div>
       </div>  

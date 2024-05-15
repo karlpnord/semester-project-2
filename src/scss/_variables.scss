@@ -1,7 +1,7 @@
 $primary: #3559E0;
 $secondary: #068FFF;
-$light: #EEEEEE;
-$light-gray: #E4E4E4;
+$light: #ffffff;
+$light-gray: #f0f0f8;
 $dark: #2C2C2C;
 $border-clr: rgba(80, 80, 80, 0.85);
 
@@ -12,7 +12,6 @@ $display-line-height: 1;
 $regular-font-family: 'Inter', sans-serif;
 $button-font-family: 'Montserrat', sans-serif;
 
-$box-shadow-navbar: 0px 4px 4px 0px $primary;
 $box-shadow-primary: 0px 2px 2px 0px $primary;
 $box-shadow-dark: 0px 2px 2px 0px $dark;
 
@@ -30,11 +29,11 @@ $spacers: (
 );
 
 $input-font-family: 'Poppins', sans-serif;
-$input-bg: #fff;
+$input-bg: $light;
 $input-color: $dark;
 $input-border-color: $border-clr;
 $input-focus-box-shadow: none;
 $input-focus-border-color: $primary;
 
 $card-bg: $light;
-$card-border-color: $light;
+$card-border-color: $light-gray;

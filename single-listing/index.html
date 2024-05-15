@@ -10,12 +10,12 @@
   <script src="../src/js/single-listing-index.js" type="module" defer></script>
   <script src="../main.js" type="module" defer></script>
 </head>
-<body class="bg-light">
+<body>
 
   <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 justify-content-md-between">
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3 justify-content-md-between">
       <div class="container">
-        <a class="navbar-brand text-light font-family-poppins fw-bold fs-3 logo" href="/index.html">
+        <a class="navbar-brand text-dark font-family-poppins fw-bold fs-3 logo" href="/index.html">
           CTO Auction
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +24,16 @@
         <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
           <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../feed/index.html">Listings</a>
+              <a class="nav-link text-dark" href="../feed/index.html">Listings</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../profile/index.html">Profile</a>
+              <a class="nav-link text-dark" href="../profile/index.html">Profile</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../create-listing/index.html">Create</a>
+              <a class="nav-link text-dark" href="../create-listing/index.html">Create</a>
             </li>
             <li class="nav-item mt-3 mt-md-0">
-              <a class="btn btn-primary rounded-pill px-md-4" id="logOutBtn" href="../">Logout</a>
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="logOutBtn" href="../">Logout</a>
             </li>
           </ul>
         </div>
@@ -75,14 +75,16 @@
         </div>
       </form>
     </section>
-    <section class="container" id="bidsContainer">
-      <div class="d-flex justify-content-center mb-3">
-        <button class="btn btn-blank btn-lg rounded-0" id="viewBidBtn">
-          <span>View Bids</span>
-          <i class="fa-solid fa-chevron-down" id="viewBidBtnIcon"></i>
-        </button>
+    <section class="bg-lightgray" id="bidsContainer">
+      <div class="container py-5">
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-blank btn-lg rounded-0" id="viewBidBtn">
+            <span>View Bids</span>
+            <i class="fa-solid fa-chevron-down" id="viewBidBtnIcon"></i>
+          </button>
+        </div>
+        <div id="collapseBids"></div>
       </div>
-      <div id="collapseBids"></div>
     </section>
   </main>
 
