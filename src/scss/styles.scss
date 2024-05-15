@@ -111,18 +111,19 @@ main {
 
 #listingImg {
   width: 100%;
+  max-width: 600px;
   object-fit: cover;
-  height: 200px;
+  height: auto;
 }
 
-@media (min-width: 500px) {
-  #listingImg {
-    height: 300px;
-  }
+#collapseBids {
+  max-height: fit-content;
+  overflow: hidden;
+  transition: max-height 200ms ease;
+  max-height: 500px;
 }
 
-@media (min-width: 750px) {
-  #listingImg {
-    height: 400px;
-  }
+#collapseBids.collapsed {
+  max-height: 0px;
+  transition: max-height 200ms ease;
 }

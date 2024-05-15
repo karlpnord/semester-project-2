@@ -10,7 +10,7 @@ export function showListings(listings) {
     container.appendChild(colDiv);
 
     const card = document.createElement('div');
-    card.classList.add('card', 'shadow', 'h-100');
+    card.classList.add('card', 'shadow', 'h-100', 'bg-white');
     colDiv.appendChild(card);
 
     const cardImg = document.createElement('img');

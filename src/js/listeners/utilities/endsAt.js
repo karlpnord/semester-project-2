@@ -11,14 +11,14 @@ export function timeUntilDeadline(date) {
   minutes = minutes - days * 24 * 60 - hours * 60;
   seconds = seconds - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60;
 
-  let string = `Ends in: ${days} d ${hours} h ${minutes} m`;
+  let string = `Ends in: ${days}d ${hours}h ${minutes}m`;
 
   if (days === 0) {
-    string = `Ends in: ${hours} h ${minutes} m`;
+    string = `Ends in: ${hours}h ${minutes}m`;
   }
 
   if (hours === 0) {
-    string = `Ends in: ${minutes} m`;
+    string = `Ends in: ${minutes}m`;
   }
 
   if (endDay - now < 0) {
