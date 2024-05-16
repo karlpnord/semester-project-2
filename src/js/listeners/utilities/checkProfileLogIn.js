@@ -1,3 +1,5 @@
+import { displayMessage } from './displayMessage.js';
+
 export function checkIfLoggedIn(page) {
   const profile = localStorage.getItem('profile');
   const content = document.querySelectorAll('section');
@@ -7,26 +9,19 @@ export function checkIfLoggedIn(page) {
       section.innerHTML = '';
     });
 
-    const main = document.querySelector('main');
-    const newDiv = document.createElement('div');
-    document.querySelector('footer').classList.add('fixed-bottom');
-    newDiv.classList.add(
-      'text-danger',
-      'fw-bold',
-      'text-center',
-      'fs-2',
-      'mt-6',
-    );
-
+    let string = '';
     if (page === 'profile') {
-      newDiv.textContent = 'You have to be logged in to view your profile!';
+      string = 'You have to be logged in to view your profile!';
     }
-
     if (page === 'create') {
-      newDiv.textContent = 'You have to be logged in to add a listing!';
+      string = 'You have to be logged in to add a listing!';
     }
 
-    main.append(newDiv);
+    const main = document.querySelector('main');
+    const message = displayMessage(string);
+    document.querySelector('footer').classList.add('fixed-bottom');
+    message.classList.add('mt-6', 'fs-3');
+    main.append(message);
     return false;
   } else {
     return true;
