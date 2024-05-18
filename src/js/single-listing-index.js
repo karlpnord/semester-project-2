@@ -3,6 +3,7 @@ import { singleListing } from './api/listings/single-listings.js';
 import { logout } from './api/auth/logout.js';
 import { changeToSignIn } from './listeners/utilities/changeToSignIn.js';
 import { displayMessage } from './listeners/utilities/displayMessage.js';
+import { userBidListener } from './listeners/listings/userBid.js';
 
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
@@ -10,6 +11,7 @@ const id = searchParams.get('id');
 const url = `${API_BASE_URL}auction/listings/${id}/?_seller=true&_bids=true`;
 
 singleListing(url);
+userBidListener(id);
 
 document.querySelector('#logOutBtn').onclick = function () {
   logout();
@@ -22,4 +24,5 @@ if (!profile) {
     'You have to be logged in to bid on auction listings!',
   );
   document.querySelector('form').appendChild(message);
+  document.querySelector('#bidAmountInput').disabled = true;
 }

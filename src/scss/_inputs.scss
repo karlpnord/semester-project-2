@@ -35,3 +35,8 @@ input {
 input::placeholder {
   background: $light;
 }
+
+input:disabled::placeholder,
+input:disabled {
+  background: $light-gray;
+}

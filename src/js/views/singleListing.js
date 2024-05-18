@@ -1,5 +1,6 @@
 import { timeUntilDeadline } from '../listeners/utilities/endsAt.js';
 import { displayMessage } from '../listeners/utilities/displayMessage.js';
+import { findHighestBid } from '../listeners/utilities/highestBid.js';
 
 export function renderSingleListing(data) {
   document.querySelector('#listingContent').classList.remove('d-none');
@@ -23,6 +24,10 @@ export function renderSingleListing(data) {
     const message = displayMessage(
       'Listing has expired and cannot be bid on anymore!',
     );
+    document.querySelector('#bidAmountInput').disabled = true;
     document.querySelector('form').appendChild(message);
   }
+
+  const bid = findHighestBid(data.bids);
+  document.querySelector('#highestBid').textContent = ' ' + bid;
 }
