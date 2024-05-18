@@ -13,10 +13,11 @@
 <body class="bg-light">
 
   <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 justify-content-md-between">
+    <nav class="navbar navbar-expand-md bg-white navbar-light py-3 justify-content-md-between">
       <div class="container">
-        <a class="navbar-brand text-light font-family-poppins fw-bold fs-3 logo" href="/index.html">
-          CTO Auction
+        <a class="navbar-brand fw-bold fs-3 logo" href="/index.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Auction</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,16 +25,19 @@
         <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
           <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../feed/index.html">Listings</a>
+              <a class="nav-link text-dark" href="../feed/index.html">Listings</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="index.html">Profile</a>
+              <a class="nav-link text-dark" href="index.html">Profile</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../create-listing/index.html">Create</a>
+              <a class="nav-link text-dark" href="../create-listing/index.html">Create</a>
             </li>
-            <li class="nav-item mt-3 mt-md-0">
-              <a class="btn btn-primary rounded-pill px-md-4" id="logOutBtn" href="../">Logout</a>
+            <li class="nav-item mt-3 mt-md-0" id="logOutItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="logOutBtn" href="../">Logout</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0 d-none" id="signInItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="signInBtn" href="../sign-in/">Sign In</a>
             </li>
           </ul>
         </div>
@@ -41,12 +45,12 @@
     </nav>
   </header>
 
-  <main>
-    <section class="container">
+  <main class="bg-white">
+    <section class="container mb-7">
       <div class="loader mt-8"></div>
-      <div class="mt-7 pb-6 text-center profile-container rounded border border-dark-subtle shadow d-none" id="profileContainer">
+      <div class="mt-7 pb-3 text-center profile-container rounded border border-dark-subtle shadow d-none" id="profileContainer">
         <div class="profile-banner"></div>
-        <img src="../images/avatar.jpeg" alt="..." class="rounded-circle profile-avatar" id="profileImage">
+        <img src="../images/avatar.jpeg" alt="profile picture" class="rounded-circle profile-avatar" id="profileImage">
         <h1 class="display-3 mt-5" id="profileName">Placeholder</h1>
         <p id="profileEmail">Placeholder</p>
         <h2 id="profileCredits">Placeholder</h2>
@@ -60,15 +64,17 @@
         <div class="error-container mt-5 text-danger fw-bold fs-5"></div>
       </div>
     </section>
-    <section class="container">
-      <div class="mt-8">
-      <h2 class="display-3 text-center mb-7">Your Listings</h2>
-        <div class="row gy-5 gx-5 mx-auto pb-6 mb-5" id="listingsContainer"></div>
+    <section class="bg-lightgray">
+      <div class="container mt-6 py-6">
+        <div>
+          <h2 class="display-3 text-center mb-7">Your Listings</h2>
+          <div class="row gy-5 gx-5 mx-auto" id="listingsContainer"></div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="text-center text-light bg-dark">
+  <footer class="text-center text-light bg-secondary">
     <div class="container">
       <div class="text-center footer-copyright py-4">
         &#169;Copyright: CTO Auction

@@ -1,4 +1,5 @@
 import { timeUntilDeadline } from '../listeners/utilities/endsAt.js';
+import { displayMessage } from '../listeners/utilities/displayMessage.js';
 
 export function renderSingleListing(data) {
   document.querySelector('#listingContent').classList.remove('d-none');
@@ -17,4 +18,11 @@ export function renderSingleListing(data) {
   document.querySelector('#listingDate').textContent = timeUntilDeadline(
     data.endsAt,
   );
+
+  if (timeUntilDeadline(data.endsAt) === 'Listing expired') {
+    const message = displayMessage(
+      'Listing has expired and cannot be bid on anymore!',
+    );
+    document.querySelector('form').appendChild(message);
+  }
 }

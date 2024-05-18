@@ -1,12 +1,12 @@
 export function viewBids(data) {
   const bidContainer = document.querySelector('#collapseBids');
   bidContainer.classList.add(
-    'mb-5',
     'd-flex',
     'flex-column',
     'view-bids-container',
     'mx-auto',
     'rounded',
+    'pt-4',
   );
 
   bidContainer.classList.add('collapsed');

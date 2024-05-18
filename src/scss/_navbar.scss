@@ -1,9 +1,21 @@
 .nav-link {
   font-family: $regular-font-family;
   color: $light;
+  transition: 200ms ease;
+  &:hover {
+    font-weight: $font-weight-bold;
+  }
 }
 
 header {
-  box-shadow: $box-shadow-navbar;
-  z-index: 1000;
+  border-bottom: 2px solid $light-gray;
+}
+
+.logo {
+  color: $primary;
+  font-family: $display-font-family;
+  transition: color 200ms ease-in;
+  &:hover {
+    color: $dark;
+  }
 }

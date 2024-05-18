@@ -31,3 +31,7 @@ input {
 #updateAvatarBtn {
   max-width: 500px;
 }
+
+input::placeholder {
+  background: $light;
+}

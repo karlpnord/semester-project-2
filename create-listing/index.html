@@ -6,16 +6,18 @@
   <meta name="description" content="TBD">
   <title>CTO - Create Listing</title>
   <link rel="stylesheet" href="/dist/css/styles.css">
+  <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
   <script src="../main.js" type="module" defer></script>
   <script src="../src/js/create-index.js" type="module" defer></script>
 </head>
 <body class="bg-light">
 
   <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 justify-content-md-between">
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3 justify-content-md-between">
       <div class="container">
-        <a class="navbar-brand text-light font-family-poppins fw-bold fs-3 logo" href="/index.html">
-          CTO Auction
+        <a class="navbar-brand fw-bold fs-3 logo" href="/index.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Auction</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,16 +25,19 @@
         <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
           <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../feed/index.html">Listings</a>
+              <a class="nav-link text-dark" href="../feed/index.html">Listings</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="../profile/index.html">Profile</a>
+              <a class="nav-link text-dark" href="../profile/index.html">Profile</a>
             </li>
             <li class="nav-item ms-2 ms-md-0">
-              <a class="nav-link" href="index.html">Create</a>
+              <a class="nav-link text-dark" href="index.html">Create</a>
             </li>
-            <li class="nav-item mt-3 mt-md-0">
-              <a class="btn btn-primary rounded-pill px-md-4" id="logOutBtn" href="../">Logout</a>
+            <li class="nav-item mt-3 mt-md-0" id="logOutItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="logOutBtn" href="../">Logout</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0 d-none" id="signInItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="signInBtn" href="../sign-in/">Sign In</a>
             </li>
           </ul>
         </div>
@@ -89,7 +94,7 @@
     </section>
   </main>
 
-  <footer class="text-center text-light bg-dark">
+  <footer class="text-center text-light bg-secondary">
     <div class="container">
       <div class="text-center footer-copyright py-4">
         &#169;Copyright: CTO Auction
