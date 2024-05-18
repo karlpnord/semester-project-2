@@ -2,12 +2,20 @@
   font-family: $regular-font-family;
   color: $light;
   transition: 200ms ease;
-}
-
-.nav-link:hover {
-  font-weight: $font-weight-bold;
+  &:hover {
+    font-weight: $font-weight-bold;
+  }
 }
 
 header {
   border-bottom: 2px solid $light-gray;
+}
+
+.logo {
+  color: $primary;
+  font-family: $display-font-family;
+  transition: color 200ms ease-in;
+  &:hover {
+    color: $dark;
+  }
 }
