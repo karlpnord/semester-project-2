@@ -4,6 +4,7 @@ import { logout } from './api/auth/logout.js';
 import { checkIfLoggedIn } from './listeners/utilities/checkProfileLogIn.js';
 import { updateAvatarListener } from './listeners/profile/updateAvatar.js';
 import { changeToSignIn } from './listeners/utilities/changeToSignIn.js';
+import { footerUserData } from './listeners/utilities/footerUserData.js';
 
 const check = checkIfLoggedIn('profile');
 
@@ -14,6 +15,8 @@ if (check) {
 } else {
   changeToSignIn();
 }
+
+footerUserData();
 
 document.querySelector('#logOutBtn').onclick = function () {
   logout();
