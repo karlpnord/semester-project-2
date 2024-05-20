@@ -17,6 +17,12 @@ export async function singleListing(url) {
   if (response.ok) {
     renderSingleListing(json.data);
     viewBids(json.data);
+    document
+      .querySelector('meta[name="description"]')
+      .setAttribute(
+        'content',
+        `Auction listing for ${json.data.title}, bid today and maybe it will be yours!`,
+      );
     return json;
   }
   console.log(json.errors[0].message);
