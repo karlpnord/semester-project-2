@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css"
   },
   "keywords": [],
@@ -19,8 +20,10 @@
   },
   "homepage": "https://github.com/karlpnord/semester-project-2#readme",
   "devDependencies": {
-    "bootstrap": "^5.3.3",
     "prettier": "^3.2.5",
     "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
