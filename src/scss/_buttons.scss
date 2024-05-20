@@ -17,3 +17,7 @@
   color: $secondary;
   background-color: $light-gray;
 }
+
+.btn-blank:disabled {
+  border: none;
+}
