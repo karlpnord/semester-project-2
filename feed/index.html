@@ -49,13 +49,13 @@
     <section class="py-6">
       <div class="container text-center">
         <h1 class="display-1 mb-2">Current Listings</h1>
-        <div class="input-group search-group mt-4 mx-auto container">
-          <input type="text" class="form-control form-search" placeholder="Search..." aria-label="Search" aria-describedby="searchButton">
-          <button class="btn btn-outline-primary" type="button" id="searchButton">Search</button>
-        </div>
+        <form class="input-group search-group mt-4 mx-auto container" id="searchForm">
+          <input type="text" class="form-control form-search" placeholder="Search..." aria-label="Search" aria-describedby="searchButton" id="searchInput">
+          <button class="btn btn-outline-primary" type="submit" id="searchButton">Search</button>
+        </form>
       </div>
     </section>
-    <section>
+    <section id="searchError">
       <div class="error-container text-center text-danger fw-bold"></div>
     </section>
     <section class="bg-lightgray py-7">

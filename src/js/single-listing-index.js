@@ -1,5 +1,5 @@
 import { API_BASE_URL } from './api/constants.js';
-import { singleListing } from './api/listings/single-listings.js';
+import { singleListing } from './api/listings/singleListings.js';
 import { logout } from './api/auth/logout.js';
 import { changeToSignIn } from './listeners/utilities/changeToSignIn.js';
 import { displayMessage } from './listeners/utilities/displayMessage.js';

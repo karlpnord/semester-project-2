@@ -3,6 +3,7 @@ import { getListings } from './api/listings/read.js';
 import { pagination } from './listeners/listings/pagination.js';
 import { changeToSignIn } from './listeners/utilities/changeToSignIn.js';
 import { footerUserData } from './listeners/utilities/footerUserData.js';
+import { searchListingsListener } from './listeners/listings/searchListings.js';
 
 document.querySelector('#logOutBtn').onclick = function () {
   logout();
@@ -10,6 +11,8 @@ document.querySelector('#logOutBtn').onclick = function () {
 
 getListings();
 footerUserData();
+
+searchListingsListener();
 
 const nextBtn = document.querySelector('#nextBtn');
 const prevBtn = document.querySelector('#prevBtn');
