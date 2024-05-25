@@ -12,11 +12,9 @@ export async function createListing(url, data) {
     body: JSON.stringify(data),
   });
 
-  console.log(response);
   const json = await response.json();
 
   if (response.ok) {
-    console.log(json);
     return json;
   }
   document.querySelector('.error-container').textContent =

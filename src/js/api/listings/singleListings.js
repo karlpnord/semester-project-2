@@ -25,5 +25,6 @@ export async function singleListing(url) {
       );
     return json;
   }
-  console.log(json.errors[0].message);
+  document.querySelector('#listingContent').textContent =
+    json.errors[0].message;
 }
