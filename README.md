@@ -35,4 +35,6 @@ If you have a suggestion that would make this better, please fork the repo and c
 5. Open a Pull Request
 
 ### Screenshots
-![image](https://prnt.sc/Moi4OMAcyd6u)
+![image](https://i.postimg.cc/NFdbTVmL/semester-project-2.jpg)
+![image](https://i.postimg.cc/G2ws7QdK/semester-project-2-img2.jpg)
+
