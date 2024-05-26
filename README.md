@@ -1,7 +1,7 @@
 ###### Semester Project 2
 
 ### Introduction
-The following is a training project for a fictional auction house for my Semester Project 2 and Noroff Front-end studies. The application should contain all the technologies I have learned throughout 1.5 years of coding, f.ex. HTML, CSS, JS etc.
+The following application is a training project for a fictional auction house for my Semester Project 2 at Noroff Front-end studies. The application should contain all the technologies I have learned throughout 1.5 years of studying front end development; HTML, CSS, JS etc.
 
 ### Built With
 [![My Skills](https://skillicons.dev/icons?i=html,bootstrap,css,js)](https://skillicons.dev)
