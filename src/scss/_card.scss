@@ -1,0 +1,22 @@
+.card-title,
+.card-bid {
+  font-family: $display-font-family;
+  font-weight: $font-weight-semibold;
+  letter-spacing: -1px;
+}
+
+.card-bid {
+  color: $primary;
+}
+
+.card-text {
+  color: #2C2C2C;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

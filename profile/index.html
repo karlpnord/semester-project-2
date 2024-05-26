@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your own profile and the history of your auction listings.">
+  <title>CTO - Profile</title>
+  <link rel="stylesheet" href="/dist/css/styles.css">
+  <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../src/js/profile-index.js" type="module"></script>
+</head>
+<body class="bg-light">
+
+  <header>
+    <nav class="navbar navbar-expand-md bg-white navbar-light py-3 justify-content-md-between">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 logo" href="/index.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Auction</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
+          <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link text-dark" href="../feed/index.html">Listings</a>
+            </li>
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link text-dark" href="index.html">Profile</a>
+            </li>
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link text-dark" href="../create-listing/index.html">Create</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0" id="logOutItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="logOutBtn" href="../">Logout</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0 d-none" id="signInItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="signInBtn" href="../sign-in/">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="bg-white">
+    <section class="container mb-7">
+      <div class="loader mt-8"></div>
+      <div class="mt-7 pb-3 text-center profile-container rounded border border-dark-subtle shadow d-none" id="profileContainer">
+        <div class="profile-banner"></div>
+        <img src="../images/avatar.jpeg" alt="profile picture" class="rounded-circle profile-avatar" id="profileImage">
+        <h1 class="display-3 mt-5" id="profileName">Placeholder</h1>
+        <p id="profileEmail">Placeholder</p>
+        <h2 id="profileCredits">Placeholder</h2>
+        <form class="container mt-6 d-flex flex-column gap-3 align-items-center px-4" id="avatarForm">
+          <div class="form-floating update-avatar-container w-100">
+            <input type="url" class="form-control" id="inputUpdateAvatar" placeholder="Avatar URL" required>
+            <label for="inputUpdateAvatar">Avatar URL</label>
+          </div>
+          <button class="btn btn-primary rounded-pill btn-lg px-md-4 w-100" type="submit" id="updateAvatarBtn">Update Avatar</button>
+        </form>
+        <div class="error-container mt-5 text-danger fw-bold fs-5"></div>
+      </div>
+    </section>
+    <section class="bg-lightgray">
+      <div class="container mt-6 py-6">
+        <div>
+          <h2 class="display-3 text-center mb-7">Your Listings</h2>
+          <div class="row gy-5 gx-5 mx-auto" id="listingsContainer"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-light bg-primary">
+    <div class="container d-flex flex-column flex-order align-items-center py-3 py-md-4 gap-4 flex-md-row justify-content-md-between">
+      <div class="footer-copyright order-1 order-md-0">
+        &#169;Copyright: CTO Auction
+      </div>
+      <a class="logged-in d-flex align-items-center gap-1 order-0 order-md-1" href="#" id="footerUserData">
+        <img src="../images/avatar.jpeg" alt="profile picture" id="footerAvatar">
+        <h2 class="p-0 text-light fs-4 mb-0" id="footerUser">User</h2>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Look through all of our active auction listings!">
+  <title>CTO - Listings</title>
+  <link rel="stylesheet" href="/dist/css/styles.css">
+  <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../src/js/feed-index.js" type="module"></script>
+</head>
+<body class="bg-white">
+
+  <header>
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3 justify-content-md-between">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 logo" href="/index.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Auction</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse gap-2 mt-3 mt-md-0 flex-md-grow-0" id="navbarToggler">
+          <ul class="navbar-nav mb-2 mb-md-0 gap-md-2">
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link text-dark" href="index.html">Listings</a>
+            </li>
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link text-dark" href="../profile/index.html">Profile</a>
+            </li>
+            <li class="nav-item ms-2 ms-md-0">
+              <a class="nav-link text-dark" href="../create-listing/index.html">Create</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0" id="logOutItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="logOutBtn" href="../">Logout</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0 d-none" id="signInItem">
+              <a class="btn btn-primary rounded-pill px-md-4 ms-2" id="signInBtn" href="../sign-in/">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-6">
+      <div class="container text-center">
+        <h1 class="display-1 mb-2">Current Listings</h1>
+        <form class="input-group search-group mt-4 mx-auto container" id="searchForm">
+          <input type="text" class="form-control form-search" placeholder="Search..." aria-label="Search" aria-describedby="searchButton" id="searchInput">
+          <button class="btn btn-outline-primary" type="submit" id="searchButton">Search</button>
+        </form>
+      </div>
+    </section>
+    <div id="searchError">
+      <div class="error-container text-center text-danger fw-bold"></div>
+    </div>
+    <div class="bg-lightgray py-7">
+      <div class="container">
+        <div class="row gy-5 gx-5 mx-auto" id="listingsContainer">
+          <div class="loader"></div>
+        </div>
+      </div>  
+    </div>
+
+    <div>
+      <nav aria-label="Page navigation" class="container my-6">
+        <ul class="pagination justify-content-center gap-2">
+          <li class="page-item">
+            <button class="btn btn-outline-primary rounded-pill" id="prevBtn" data-value="prev">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>Prev</span>
+            </button>
+          </li>
+          <li class="page-item">
+            <button class="btn btn-outline-primary rounded-pill" id="nextBtn" data-value="next">
+              <span>Next</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </li>
+        </ul>
+        <h2 class="text-center fs-6" id="currentPage">Placeholder</h2>
+      </nav>
+    </div>
+
+  </main>
+  <footer class="text-light bg-primary">
+    <div class="container d-flex flex-column flex-order align-items-center py-3 py-md-4 gap-4 flex-md-row justify-content-md-between">
+      <div class="footer-copyright order-1 order-md-0">
+        &#169;Copyright: CTO Auction
+      </div>
+      <a class="logged-in d-flex align-items-center gap-1 order-0 order-md-1" href="../profile/" id="footerUserData">
+        <img src="../images/avatar.jpeg" alt="profile picture" id="footerAvatar">
+        <h2 class="p-0 text-light fs-4 mb-0" id="footerUser">User</h2>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -2,14 +2,22 @@
   font-family: $button-font-family;
   width: fit-content;
   font-weight: $font-weight-semibold;
+  transition: all ease 200ms;
 }
 
-.btn:hover {
-  transform: scale(1.02);
-  box-shadow: $box-shadow-dark;
-  transition: ease 300ms;
+.btn-primary {
+  border: none;
+  &:hover {
+    background-color: $primary-hover;
+  }
 }
 
 .btn-outline-primary:hover {
-  color: $primary;
+  border-color: $secondary;
+  color: $secondary;
+  background-color: $light-gray;
+}
+
+.btn-blank:disabled {
+  border: none;
 }

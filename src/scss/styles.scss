@@ -15,35 +15,38 @@
 
 @import "buttons";
 @import "inputs";
+@import "navbar";
+@import "card";
 
-header {
-  box-shadow: $box-shadow-navbar;
-}
-
-.logo {
-  font-family: $display-font-family;
-}
-
-h1 {
+h1,
+.display-3 {
   font-family: $display-font-family;
   font-weight: 800;
   color: $primary;
   letter-spacing: -2px;
 }
 
-p {
-  font-family: 'Inter', sans-serif;
-  font-weight: $font-weight-normal;
+.display-3 {
   color: $dark;
 }
 
+p {
+  font-family: 'Inter', sans-serif;
+  font-weight: $font-weight-medium;
+  color: $dark;
+  opacity: 0.8;
+}
+
 main {
-  margin: 100px auto 150px;
-  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bg-lightgray {
+  background: $light-gray;
 }
 
 .link {
-  color: $primary;
+  color: $secondary;
   font-weight: 900;
   text-decoration: none;
   padding-left: 5px;
@@ -53,12 +56,77 @@ main {
   text-decoration: underline;
 }
 
-footer {
-  background: rgb(53,89,224);
-  background: linear-gradient(15deg, rgba(53,89,224,1) 44%, rgba(6,143,255,1) 83%);
+.footer-copyright {
+  font-family: $display-font-family;
 }
 
-footer p {
-  color: $light;
-  font-weight: $font-weight-semibold;
+.logged-in img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.single-listing-image {
+  max-width: 700px;
+}
+
+.view-bids-container {
+  max-width: 600px;
+}
+
+.profile-avatar {
+  width: 100%;
+  max-width: 100px;
+}
+
+.profile-banner {
+  height: 125px;
+  background: rgb(98,60,234);
+  background: linear-gradient(90deg, rgba(98,60,234,1) 40%, rgba(64,98,187,1) 70%);
+}
+
+.profile-avatar {
+  margin-top: -50px;
+  width: 100%;
+  object-fit: cover;
+  height: 100px;
+}
+
+.profile-container {
+  overflow: hidden;
+}
+
+.loader {
+  border: 12px solid $dark;
+  border-top: 12px solid $primary;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 5em auto;
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#listingImg {
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+  height: auto;
+}
+
+#collapseBids {
+  max-height: fit-content;
+  overflow: hidden;
+  transition: max-height 200ms ease;
+  max-height: 500px;
+}
+
+#collapseBids.collapsed {
+  max-height: 0px;
+  transition: max-height 200ms ease;
 }
